@@ -1,0 +1,50 @@
+const version = {
+  major: "0",
+  minor: "0",
+  patch: "1"
+};
+
+const printUsage = () => {
+  console.log();
+  console.log("  Usage: hFormatter [option] [paths]");
+  console.log();
+  console.log("  Options");
+  console.log("    -h, --help\t\t\tPrint usage");
+  console.log(
+    "    -l, --language <language>\tFormatting with specific language"
+  );
+  console.log(
+    "    -f, --format <file>\t\tFormatting with specific format file"
+  );
+  console.log("    -v, --version\t\tPrint version");
+  console.log();
+  console.log("  Note: There must be only 1 option.");
+};
+
+const printVersion = () => {
+  console.log();
+  console.log("  hFormatter");
+  console.log(`  version: v${version.major}.${version.minor}.${version.patch}`);
+};
+
+const printError = () => {
+  console.log("[ERR] Wrong usage !!");
+  printUsage();
+};
+
+const main = (argc, argv) => {
+  if (5 < argc) {
+    printError();
+    process.exit();
+  }
+
+  if (2 < argc && argv[2] == "-h") {
+    printUsage();
+  } else if (2 < argc && argv[2] == "-v") {
+    printVersion();
+  }
+};
+
+module.exports = () => {
+  main(process.argv.length, process.argv);
+};

@@ -1,0 +1,11 @@
+{
+  "name": "hformatter",
+  "author": "llHoYall <hoya128@gmail.com>",
+  "repository": "https://github.com/llHoYall/hFormatter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "hFormatter": "./bin/hFormatter"
+  },
+  "license": "MIT"
+}
