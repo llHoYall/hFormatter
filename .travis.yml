@@ -6,7 +6,6 @@ node_js:
 os:
   - osx
   - linux
-  - windows
 
 before_install:
   - npm i -g codecov
