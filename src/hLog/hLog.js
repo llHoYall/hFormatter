@@ -1,76 +1,76 @@
-fgBlack = str => {
+const fgBlack = str => {
   return `\x1b[30m${str}\x1b[0m`;
 };
 
-fgBrBlack = str => {
+const fgBrBlack = str => {
   return `\x1b[01;30m${str}\x1b[0m`;
 };
 
-fgRed = str => {
+const fgRed = str => {
   return `\x1b[31m${str}\x1b[0m`;
 };
 
-fgBrRed = str => {
+const fgBrRed = str => {
   return `\x1b[01;31m${str}\x1b[0m`;
 };
 
-fgGreen = str => {
+const fgGreen = str => {
   return `\x1b[32m${str}\x1b[0m`;
 };
 
-fgYellow = str => {
+const fgYellow = str => {
   return `\x1b[33m${str}\x1b[0m`;
 };
 
-fgBlue = str => {
+const fgBlue = str => {
   return `\x1b[34m${str}\x1b[0m`;
 };
 
-fgMagenta = str => {
+const fgMagenta = str => {
   return `\x1b[35m${str}\x1b[0m`;
 };
 
-fgCyan = str => {
+const fgCyan = str => {
   return `\x1b[36m${str}\x1b[0m`;
 };
 
-fgWhite = str => {
+const fgWhite = str => {
   return `\x1b[37m${str}\x1b[0m`;
 };
 
-fgBrWhite = str => {
+const fgBrWhite = str => {
   return `\x1b[01;37m${str}\x1b[0m`;
 };
 
-bgBlack = str => {
+const bgBlack = str => {
   return `\x1b[40m${str}\x1b[0m`;
 };
 
-bgRed = str => {
+const bgRed = str => {
   return `\x1b[41m${str}\x1b[0m`;
 };
 
-bgGreen = str => {
+const bgGreen = str => {
   return `\x1b[42m${str}\x1b[0m`;
 };
 
-bgYellow = str => {
+const bgYellow = str => {
   return `\x1b[43m${str}\x1b[0m`;
 };
 
-bgBlue = str => {
+const bgBlue = str => {
   return `\x1b[44m${str}\x1b[0m`;
 };
 
-bgMagenta = str => {
+const bgMagenta = str => {
   return `\x1b[45m${str}\x1b[0m`;
 };
 
-bgCyan = str => {
+const bgCyan = str => {
   return `\x1b[46m${str}\x1b[0m`;
 };
 
-bgWhite = str => {
+const bgWhite = str => {
   return `\x1b[47m${str}\x1b[0m`;
 };
 
