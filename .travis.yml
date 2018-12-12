@@ -1,0 +1,26 @@
+language: node_js
+
+node_js:
+  - node  # latest
+
+os:
+  - osx
+  - linux
+  - windows
+
+before_install:
+  - npm i -g codecov
+
+install:
+  - npm i -g
+
+script:
+  - npm run test
+
+after_success:
+  - codecov
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
