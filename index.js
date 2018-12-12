@@ -1,3 +1,5 @@
+const hLog = require("./src/hLog/hLog.js");
+
 const version = {
   major: "0",
   minor: "0",
@@ -6,7 +8,7 @@ const version = {
 
 const printUsage = () => {
   console.log();
-  console.log("  Usage: hFormatter [option] [paths]");
+  console.log(hLog.fgBrWhite("  Usage: hFormatter [option] [paths]"));
   console.log();
   console.log("  Options");
   console.log("    -h, --help\t\t\tPrint usage");
@@ -18,17 +20,18 @@ const printUsage = () => {
   );
   console.log("    -v, --version\t\tPrint version");
   console.log();
-  console.log("  Note: There must be only 1 option.");
+  console.log(hLog.fgMagenta("  Note: There must be only 1 option."));
 };
 
 const printVersion = () => {
   console.log();
-  console.log("  hFormatter");
+  console.log(hLog.fgBrWhite("  hFormatter"));
   console.log(`  version: v${version.major}.${version.minor}.${version.patch}`);
 };
 
 const printError = () => {
-  console.log("[ERR] Wrong usage !!");
+  console.log();
+  console.log(hLog.fgBrRed("  [ERR] Wrong usage !!"));
   printUsage();
 };
 
