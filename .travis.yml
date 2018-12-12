@@ -12,7 +12,7 @@ before_install:
   - npm i -g codecov
 
 install:
-  - npm i -g
+  - npm i
 
 script:
   - npm run test
